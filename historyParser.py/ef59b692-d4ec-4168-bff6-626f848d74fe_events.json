@@ -1,0 +1,113 @@
+{
+  "events": [
+    {
+      "eventId": "1",
+      "eventTime": "2022-04-18T09:09:06.706166459Z",
+      "eventType": "WorkflowExecutionStarted",
+      "version": "0",
+      "taskId": "8006934486",
+      "workflowExecutionStartedEventAttributes": {
+        "workflowType": {
+          "name": "PurchaseWidgetsWorkflow"
+        },
+        "parentWorkflowNamespace": "",
+        "parentWorkflowExecution": null,
+        "parentInitiatedEventId": "0",
+        "taskQueue": {
+          "name": "PURCHASE_WIDGET_TASK_QUEUE",
+          "kind": "Normal"
+        },
+        "input": {
+          "payloads": [
+            {
+              "metadata": {
+                "encoding": "anNvbi9wbGFpbg=="
+              },
+              "data": "Ik1hZWwi"
+            },
+            {
+              "metadata": {
+                "encoding": "anNvbi9wbGFpbg=="
+              },
+              "data": "Ijg1NDgi"
+            }
+          ]
+        },
+        "workflowExecutionTimeout": "0s",
+        "workflowRunTimeout": "0s",
+        "workflowTaskTimeout": "10s",
+        "continuedExecutionRunId": "",
+        "initiator": "Unspecified",
+        "continuedFailure": null,
+        "lastCompletionResult": null,
+        "originalExecutionRunId": "ef59b692-d4ec-4168-bff6-626f848d74fe",
+        "identity": "55163@maels-macbook-pro.home",
+        "firstExecutionRunId": "ef59b692-d4ec-4168-bff6-626f848d74fe",
+        "retryPolicy": null,
+        "attempt": 1,
+        "workflowExecutionExpirationTime": null,
+        "cronSchedule": "",
+        "firstWorkflowTaskBackoff": "0s",
+        "memo": null,
+        "searchAttributes": null,
+        "prevAutoResetPoints": null,
+        "header": {
+          "fields": {}
+        }
+      }
+    },
+    {
+      "eventId": "2",
+      "eventTime": "2022-04-18T09:09:06.706201249Z",
+      "eventType": "WorkflowTaskScheduled",
+      "version": "0",
+      "taskId": "8006934487",
+      "workflowTaskScheduledEventAttributes": {
+        "taskQueue": {
+          "name": "PURCHASE_WIDGET_TASK_QUEUE",
+          "kind": "Normal"
+        },
+        "startToCloseTimeout": "10s",
+        "attempt": 1
+      }
+    },
+    {
+      "eventId": "3",
+      "eventTime": "2022-04-18T09:09:06.741240264Z",
+      "eventType": "WorkflowTaskStarted",
+      "version": "0",
+      "taskId": "8006934491",
+      "workflowTaskStartedEventAttributes": {
+        "scheduledEventId": "2",
+        "identity": "55157@maels-macbook-pro.home",
+        "requestId": "41f62010-b7cb-4567-96c8-ee0ca935ba59"
+      }
+    },
+    {
+      "eventId": "4",
+      "eventTime": "2022-04-18T09:09:07.004385576Z",
+      "eventType": "WorkflowTaskFailed",
+      "version": "0",
+      "taskId": "8006934494",
+      "workflowTaskFailedEventAttributes": {
+        "scheduledEventId": "2",
+        "startedEventId": "3",
+        "cause": "BadSearchAttributes",
+        "failure": {
+          "message": "BadSearchAttributes: 'mael.temporal-dev' namespace has no search-attributes defined",
+          "source": "",
+          "stackTrace": "",
+          "cause": null,
+          "serverFailureInfo": {
+            "nonRetryable": true
+          }
+        },
+        "identity": "55157@maels-macbook-pro.home",
+        "baseRunId": "",
+        "newRunId": "",
+        "forkEventVersion": "0",
+        "binaryChecksum": ""
+      }
+    }
+  ]
+}

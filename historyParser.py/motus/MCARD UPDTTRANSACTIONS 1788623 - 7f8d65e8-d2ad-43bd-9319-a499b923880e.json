@@ -1,0 +1,577 @@
+[
+    {
+        "eventTime": {
+            "seconds": "1650389453",
+            "nanos": 637320183
+        },
+        "version": "0",
+        "attributes": "workflowExecutionStartedEventAttributes",
+        "eventType": "EVENT_TYPE_WORKFLOW_EXECUTION_STARTED",
+        "workflowExecutionStartedEventAttributes": {
+            "header": {
+                "fields": {
+                    "com.motus.temporal.mdc:X-SESSION-ID": {
+                        "metadata": {
+                            "encoding": "anNvbi9wbGFpbg=="
+                        },
+                        "data": ""
+                    },
+                    "com.motus.temporal.mdc:X-UNIQUE-ID": {
+                        "metadata": {
+                            "encoding": "anNvbi9wbGFpbg=="
+                        },
+                        "data": ""
+                    }
+                }
+            },
+            "workflowExecutionTimeout": {
+                "seconds": "0",
+                "nanos": 0
+            },
+            "continuedExecutionRunId": "",
+            "parentWorkflowNamespace": "",
+            "workflowTaskTimeout": {
+                "seconds": "10",
+                "nanos": 0
+            },
+            "cronSchedule": "",
+            "initiator": "CONTINUE_AS_NEW_INITIATOR_UNSPECIFIED",
+            "attempt": 1,
+            "firstExecutionRunId": "7f8d65e8-d2ad-43bd-9319-a499b923880e",
+            "input": {
+                "payloads": [
+                    {
+                        "metadata": {
+                            "encoding": "anNvbi9wbGFpbg=="
+                        },
+                        "data": ""
+                    }
+                ]
+            },
+            "workflowType": {
+                "name": "CardTransactionsWorkflow"
+            },
+            "firstWorkflowTaskBackoff": {
+                "seconds": "0",
+                "nanos": 0
+            },
+            "parentInitiatedEventId": "0",
+            "originalExecutionRunId": "7f8d65e8-d2ad-43bd-9319-a499b923880e",
+            "identity": "43@motuscardservice-7f7669f8cf-6wsls",
+            "workflowRunTimeout": {
+                "seconds": "0",
+                "nanos": 0
+            },
+            "taskQueue": {
+                "name": "MotusCardServiceTaskList",
+                "kind": "TASK_QUEUE_KIND_NORMAL"
+            }
+        },
+        "eventId": "1",
+        "taskId": "201510269"
+    },
+    {
+        "eventTime": {
+            "seconds": "1650389453",
+            "nanos": 637351424
+        },
+        "version": "0",
+        "workflowTaskScheduledEventAttributes": {
+            "taskQueue": {
+                "name": "MotusCardServiceTaskList",
+                "kind": "TASK_QUEUE_KIND_NORMAL"
+            },
+            "attempt": 1,
+            "startToCloseTimeout": {
+                "seconds": "10",
+                "nanos": 0
+            }
+        },
+        "attributes": "workflowTaskScheduledEventAttributes",
+        "eventType": "EVENT_TYPE_WORKFLOW_TASK_SCHEDULED",
+        "eventId": "2",
+        "taskId": "201510270"
+    },
+    {
+        "eventTime": {
+            "seconds": "1650389453",
+            "nanos": 661787308
+        },
+        "version": "0",
+        "attributes": "workflowTaskStartedEventAttributes",
+        "eventType": "EVENT_TYPE_WORKFLOW_TASK_STARTED",
+        "eventId": "3",
+        "taskId": "201510276",
+        "workflowTaskStartedEventAttributes": {
+            "requestId": "101485e5-5df1-43aa-86b3-61d62b3a86cd",
+            "identity": "43@motuscardservice-7f7669f8cf-6wsls",
+            "scheduledEventId": "2"
+        }
+    },
+    {
+        "eventTime": {
+            "seconds": "1650389453",
+            "nanos": 681194759
+        },
+        "version": "0",
+        "attributes": "workflowTaskCompletedEventAttributes",
+        "workflowTaskCompletedEventAttributes": {
+            "binaryChecksum": "",
+            "identity": "43@motuscardservice-7f7669f8cf-6wsls",
+            "startedEventId": "3",
+            "scheduledEventId": "2"
+        },
+        "eventType": "EVENT_TYPE_WORKFLOW_TASK_COMPLETED",
+        "eventId": "4",
+        "taskId": "201510279"
+    },
+    {
+        "eventTime": {
+            "seconds": "1650389453",
+            "nanos": 681309771
+        },
+        "version": "0",
+        "attributes": "startChildWorkflowExecutionInitiatedEventAttributes",
+        "eventType": "EVENT_TYPE_START_CHILD_WORKFLOW_EXECUTION_INITIATED",
+        "eventId": "5",
+        "taskId": "201510280",
+        "startChildWorkflowExecutionInitiatedEventAttributes": {
+            "header": {
+                "fields": {
+                    "com.motus.temporal.mdc:X-SESSION-ID": {
+                        "metadata": {
+                            "encoding": "anNvbi9wbGFpbg=="
+                        },
+                        "data": ""
+                    },
+                    "com.motus.temporal.mdc:X-UNIQUE-ID": {
+                        "metadata": {
+                            "encoding": "anNvbi9wbGFpbg=="
+                        },
+                        "data": ""
+                    }
+                }
+            },
+            "namespace": "mcard",
+            "workflowExecutionTimeout": {
+                "seconds": "0",
+                "nanos": 0
+            },
+            "workflowType": {
+                "name": "GetAndUpdateCardInformation"
+            },
+            "workflowTaskCompletedEventId": "4",
+            "cronSchedule": "",
+            "workflowId": "MCARD-CARDINFO-1788623",
+            "workflowIdReusePolicy": "WORKFLOW_ID_REUSE_POLICY_ALLOW_DUPLICATE",
+            "workflowTaskTimeout": {
+                "seconds": "10",
+                "nanos": 0
+            },
+            "input": {
+                "payloads": [
+                    {
+                        "metadata": {
+                            "encoding": "anNvbi9wbGFpbg=="
+                        },
+                        "data": ""
+                    }
+                ]
+            },
+            "parentClosePolicy": "PARENT_CLOSE_POLICY_TERMINATE",
+            "control": "",
+            "workflowRunTimeout": {
+                "seconds": "0",
+                "nanos": 0
+            },
+            "taskQueue": {
+                "name": "MotusCardServiceTaskList",
+                "kind": "TASK_QUEUE_KIND_NORMAL"
+            }
+        }
+    },
+    {
+        "eventTime": {
+            "seconds": "1650389453",
+            "nanos": 681345921
+        },
+        "version": "0",
+        "attributes": "activityTaskScheduledEventAttributes",
+        "eventType": "EVENT_TYPE_ACTIVITY_TASK_SCHEDULED",
+        "eventId": "6",
+        "taskId": "201510281",
+        "activityTaskScheduledEventAttributes": {
+            "activityId": "00c1396e-3d2c-3534-942d-e5a1f71b4f17",
+            "header": {
+                "fields": {
+                    "com.motus.temporal.mdc:X-SESSION-ID": {
+                        "metadata": {
+                            "encoding": "anNvbi9wbGFpbg=="
+                        },
+                        "data": ""
+                    },
+                    "com.motus.temporal.mdc:X-UNIQUE-ID": {
+                        "metadata": {
+                            "encoding": "anNvbi9wbGFpbg=="
+                        },
+                        "data": ""
+                    }
+                }
+            },
+            "namespace": "",
+            "heartbeatTimeout": {
+                "seconds": "0",
+                "nanos": 0
+            },
+            "workflowTaskCompletedEventId": "4",
+            "scheduleToCloseTimeout": {
+                "seconds": "300",
+                "nanos": 0
+            },
+            "scheduleToStartTimeout": {
+                "seconds": "300",
+                "nanos": 0
+            },
+            "retryPolicy": {
+                "nonRetryableErrorTypes": [
+                    "com.motus.motuscardservice.service.exception.WorkflowActivityRuntimeException",
+                    "org.hibernate.exception.SQLGrammarException"
+                ],
+                "initialInterval": {
+                    "seconds": "20",
+                    "nanos": 0
+                },
+                "maximumInterval": {
+                    "seconds": "2000",
+                    "nanos": 0
+                },
+                "maximumAttempts": 0,
+                "backoffCoefficient": 3
+            },
+            "input": {
+                "payloads": [
+                    {
+                        "metadata": {
+                            "encoding": "anNvbi9wbGFpbg=="
+                        },
+                        "data": ""
+                    }
+                ]
+            },
+            "activityType": {
+                "name": "FetchAndStoreCardTransactions"
+            },
+            "startToCloseTimeout": {
+                "seconds": "300",
+                "nanos": 0
+            },
+            "taskQueue": {
+                "name": "MotusCardServiceTaskList",
+                "kind": "TASK_QUEUE_KIND_NORMAL"
+            }
+        }
+    },
+    {
+        "eventTime": {
+            "seconds": "1650389453",
+            "nanos": 734744115
+        },
+        "version": "0",
+        "attributes": "childWorkflowExecutionStartedEventAttributes",
+        "childWorkflowExecutionStartedEventAttributes": {
+            "workflowExecution": {
+                "runId": "f8519399-cae2-414f-96a5-6df9f81cdfee",
+                "workflowId": "MCARD-CARDINFO-1788623"
+            },
+            "header": {
+                "fields": {
+                    "com.motus.temporal.mdc:X-SESSION-ID": {
+                        "metadata": {
+                            "encoding": "anNvbi9wbGFpbg=="
+                        },
+                        "data": ""
+                    },
+                    "com.motus.temporal.mdc:X-UNIQUE-ID": {
+                        "metadata": {
+                            "encoding": "anNvbi9wbGFpbg=="
+                        },
+                        "data": ""
+                    }
+                }
+            },
+            "initiatedEventId": "5",
+            "namespace": "mcard",
+            "workflowType": {
+                "name": "GetAndUpdateCardInformation"
+            }
+        },
+        "eventType": "EVENT_TYPE_CHILD_WORKFLOW_EXECUTION_STARTED",
+        "eventId": "7",
+        "taskId": "201510286"
+    },
+    {
+        "eventTime": {
+            "seconds": "1650389453",
+            "nanos": 734751586
+        },
+        "version": "0",
+        "workflowTaskScheduledEventAttributes": {
+            "taskQueue": {
+                "name": "43@motuscardservice-7f7669f8cf-6wsls:e05e2500-30ec-4ede-a9ea-83b0d10484e9",
+                "kind": "TASK_QUEUE_KIND_STICKY"
+            },
+            "attempt": 1,
+            "startToCloseTimeout": {
+                "seconds": "10",
+                "nanos": 0
+            }
+        },
+        "attributes": "workflowTaskScheduledEventAttributes",
+        "eventType": "EVENT_TYPE_WORKFLOW_TASK_SCHEDULED",
+        "eventId": "8",
+        "taskId": "201510287"
+    },
+    {
+        "eventTime": {
+            "seconds": "1650389453",
+            "nanos": 778805404
+        },
+        "version": "0",
+        "attributes": "workflowTaskStartedEventAttributes",
+        "eventType": "EVENT_TYPE_WORKFLOW_TASK_STARTED",
+        "eventId": "9",
+        "taskId": "201510292",
+        "workflowTaskStartedEventAttributes": {
+            "requestId": "4ec42ddd-b4be-4ea3-8ccd-44d32159bc5b",
+            "identity": "e05e2500-30ec-4ede-a9ea-83b0d10484e9",
+            "scheduledEventId": "8"
+        }
+    },
+    {
+        "eventTime": {
+            "seconds": "1650389453",
+            "nanos": 794175137
+        },
+        "version": "0",
+        "attributes": "workflowTaskCompletedEventAttributes",
+        "workflowTaskCompletedEventAttributes": {
+            "binaryChecksum": "",
+            "identity": "43@motuscardservice-7f7669f8cf-6wsls",
+            "startedEventId": "9",
+            "scheduledEventId": "8"
+        },
+        "eventType": "EVENT_TYPE_WORKFLOW_TASK_COMPLETED",
+        "eventId": "10",
+        "taskId": "201510295"
+    },
+    {
+        "eventTime": {
+            "seconds": "1650389453",
+            "nanos": 770590335
+        },
+        "version": "0",
+        "activityTaskStartedEventAttributes": {
+            "requestId": "454482c0-62d1-4acc-ab6c-0d48736a3a1d",
+            "identity": "44@motuscardservice-7f7669f8cf-nn64n",
+            "scheduledEventId": "6",
+            "attempt": 1
+        },
+        "attributes": "activityTaskStartedEventAttributes",
+        "eventType": "EVENT_TYPE_ACTIVITY_TASK_STARTED",
+        "eventId": "11",
+        "taskId": "201510297"
+    },
+    {
+        "eventTime": {
+            "seconds": "1650389453",
+            "nanos": 946828860
+        },
+        "version": "0",
+        "attributes": "activityTaskCompletedEventAttributes",
+        "eventType": "EVENT_TYPE_ACTIVITY_TASK_COMPLETED",
+        "activityTaskCompletedEventAttributes": {
+            "result": {
+                "payloads": [
+                    {
+                        "metadata": {
+                            "encoding": "anNvbi9wbGFpbg=="
+                        },
+                        "data": ""
+                    }
+                ]
+            },
+            "identity": "44@motuscardservice-7f7669f8cf-nn64n",
+            "startedEventId": "11",
+            "scheduledEventId": "6"
+        },
+        "eventId": "12",
+        "taskId": "201510298"
+    },
+    {
+        "eventTime": {
+            "seconds": "1650389453",
+            "nanos": 946838250
+        },
+        "version": "0",
+        "workflowTaskScheduledEventAttributes": {
+            "taskQueue": {
+                "name": "43@motuscardservice-7f7669f8cf-6wsls:e05e2500-30ec-4ede-a9ea-83b0d10484e9",
+                "kind": "TASK_QUEUE_KIND_STICKY"
+            },
+            "attempt": 1,
+            "startToCloseTimeout": {
+                "seconds": "10",
+                "nanos": 0
+            }
+        },
+        "attributes": "workflowTaskScheduledEventAttributes",
+        "eventType": "EVENT_TYPE_WORKFLOW_TASK_SCHEDULED",
+        "eventId": "13",
+        "taskId": "201510299"
+    },
+    {
+        "eventTime": {
+            "seconds": "1650389453",
+            "nanos": 961540953
+        },
+        "version": "0",
+        "attributes": "workflowTaskStartedEventAttributes",
+        "eventType": "EVENT_TYPE_WORKFLOW_TASK_STARTED",
+        "eventId": "14",
+        "taskId": "201510303",
+        "workflowTaskStartedEventAttributes": {
+            "requestId": "063b8ca8-6197-4d91-94b3-3f1d7fd80686",
+            "identity": "e05e2500-30ec-4ede-a9ea-83b0d10484e9",
+            "scheduledEventId": "13"
+        }
+    },
+    {
+        "eventTime": {
+            "seconds": "1650389453",
+            "nanos": 979017717
+        },
+        "version": "0",
+        "attributes": "workflowTaskCompletedEventAttributes",
+        "workflowTaskCompletedEventAttributes": {
+            "binaryChecksum": "",
+            "identity": "43@motuscardservice-7f7669f8cf-6wsls",
+            "startedEventId": "14",
+            "scheduledEventId": "13"
+        },
+        "eventType": "EVENT_TYPE_WORKFLOW_TASK_COMPLETED",
+        "eventId": "15",
+        "taskId": "201510306"
+    },
+    {
+        "eventTime": {
+            "seconds": "1650389454",
+            "nanos": 740034228
+        },
+        "version": "0",
+        "attributes": "childWorkflowExecutionCompletedEventAttributes",
+        "eventType": "EVENT_TYPE_CHILD_WORKFLOW_EXECUTION_COMPLETED",
+        "eventId": "16",
+        "childWorkflowExecutionCompletedEventAttributes": {
+            "workflowType": {
+                "name": "GetAndUpdateCardInformation"
+            },
+            "namespace": "mcard",
+            "startedEventId": "7",
+            "initiatedEventId": "5",
+            "result": {
+                "payloads": [
+                    {
+                        "metadata": {
+                            "encoding": "anNvbi9wbGFpbg=="
+                        },
+                        "data": ""
+                    }
+                ]
+            },
+            "workflowExecution": {
+                "runId": "f8519399-cae2-414f-96a5-6df9f81cdfee",
+                "workflowId": "MCARD-CARDINFO-1788623"
+            }
+        },
+        "taskId": "201510308"
+    },
+    {
+        "eventTime": {
+            "seconds": "1650389454",
+            "nanos": 740039318
+        },
+        "version": "0",
+        "workflowTaskScheduledEventAttributes": {
+            "taskQueue": {
+                "name": "43@motuscardservice-7f7669f8cf-6wsls:e05e2500-30ec-4ede-a9ea-83b0d10484e9",
+                "kind": "TASK_QUEUE_KIND_STICKY"
+            },
+            "attempt": 1,
+            "startToCloseTimeout": {
+                "seconds": "10",
+                "nanos": 0
+            }
+        },
+        "attributes": "workflowTaskScheduledEventAttributes",
+        "eventType": "EVENT_TYPE_WORKFLOW_TASK_SCHEDULED",
+        "eventId": "17",
+        "taskId": "201510309"
+    },
+    {
+        "eventTime": {
+            "seconds": "1650389454",
+            "nanos": 757138856
+        },
+        "version": "0",
+        "attributes": "workflowTaskStartedEventAttributes",
+        "eventType": "EVENT_TYPE_WORKFLOW_TASK_STARTED",
+        "eventId": "18",
+        "taskId": "201510313",
+        "workflowTaskStartedEventAttributes": {
+            "requestId": "600d2705-a85d-4bb9-93f7-9fca12bf708e",
+            "identity": "e05e2500-30ec-4ede-a9ea-83b0d10484e9",
+            "scheduledEventId": "17"
+        }
+    },
+    {
+        "eventTime": {
+            "seconds": "1650389454",
+            "nanos": 772492719
+        },
+        "version": "0",
+        "attributes": "workflowTaskCompletedEventAttributes",
+        "workflowTaskCompletedEventAttributes": {
+            "binaryChecksum": "",
+            "identity": "43@motuscardservice-7f7669f8cf-6wsls",
+            "startedEventId": "18",
+            "scheduledEventId": "17"
+        },
+        "eventType": "EVENT_TYPE_WORKFLOW_TASK_COMPLETED",
+        "eventId": "19",
+        "taskId": "201510316"
+    },
+    {
+        "eventTime": {
+            "seconds": "1650389454",
+            "nanos": 772543219
+        },
+        "version": "0",
+        "workflowExecutionCompletedEventAttributes": {
+            "workflowTaskCompletedEventId": "19",
+            "result": {
+                "payloads": [
+                    {
+                        "metadata": {
+                            "encoding": "anNvbi9wbGFpbg=="
+                        },
+                        "data": ""
+                    }
+                ]
+            }
+        },
+        "attributes": "workflowExecutionCompletedEventAttributes",
+        "eventType": "EVENT_TYPE_WORKFLOW_EXECUTION_COMPLETED",
+        "eventId": "20",
+        "taskId": "201510317"
+    }
+]

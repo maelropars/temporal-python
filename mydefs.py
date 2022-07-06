@@ -12,7 +12,7 @@ async def notify(name: str):
 @workflow.defn
 class SayHello:
     @workflow.run
-    async def run(self, names: [str]):
+    async def run(self, names):
         for i in names:
             await workflow.execute_activity(
                 notify, i, schedule_to_close_timeout=timedelta(seconds=5)
